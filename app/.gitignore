@@ -1,0 +1,28 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+
+# === Environment / Secrets ===
+.env
+.env.*
+config.pyc
+
+# === Virtualenv ===
+venv/
+venv_bot/
+
+# === FastAPI / Logs / Uploads ===
+uploads/
+logs/
+*.sqlite3
+
+# === IDE / OS junk ===
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
