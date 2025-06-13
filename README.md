@@ -28,7 +28,7 @@ It supports both **OpenAI** and **Groq** (e.g., LLaMA-3 via `llama3-70b-8192`).
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 | Layer         | Tools Used                            |
 |---------------|----------------------------------------|
@@ -41,7 +41,7 @@ It supports both **OpenAI** and **Groq** (e.g., LLaMA-3 via `llama3-70b-8192`).
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone and Install
 
@@ -79,7 +79,7 @@ Open in browser: http://127.0.0.1:8000/docs
 
 ---
 
-## 🖼Streamlit Frontend
+##Streamlit Frontend
 
 ```bash
 streamlit run frontend.py
@@ -136,9 +136,8 @@ Summary: ...
 
 ## Sample Datasets
 
-- `realistic_document_pack.zip` (.txt, .csv, .docx)
-- `short_documents_pack.zip` (.pdf and OCR)
-
+- `Light-weight datasets were chosen for ease of parsing and queueing`
+-
 ---
 
 ## Security Notes
