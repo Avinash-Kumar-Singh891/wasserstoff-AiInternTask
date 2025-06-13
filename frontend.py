@@ -7,7 +7,7 @@ st.set_page_config(page_title="Document Theme QA", layout="wide")
 st.title("Document Research & Theme Identifier")
 st.header("Upload Documents")
 
-upload_mode = st.radio("Choose upload mode:", ["Single Document", "Batch Upload"])
+upload_mode = st.radio("Choose upload mode:",["Single Document","Batch Upload"])
 
 if upload_mode == "Single Document":
     file = st.file_uploader("Upload a PDF or image file", type=["pdf", "png", "jpg","txt","md"])
@@ -46,7 +46,7 @@ if st.button("Submit Question") and question.strip():
         if response.ok:
             result = response.json()
             st.success("Response received")
-
+            
             st.subheader("Synthesized Answer")
             st.markdown(result["synthesized_answer"])
 
