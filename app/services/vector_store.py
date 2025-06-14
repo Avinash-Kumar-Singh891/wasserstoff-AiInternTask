@@ -1,28 +1,5 @@
 # # services/vector_store.py
-# import chromadb
-# from sentence_transformers import SentenceTransformer
-# client = chromadb.Client()
 
-# def store_embeddings(chunks, embeddings, metadata_list):
-#     collection = client.create_collection("documents")
-#     for i, (chunk, emb) in enumerate(zip(chunks, embeddings)):
-#         collection.add(
-#             ids=[f"chunk-{i}"],
-#             documents=[chunk],
-#             embeddings=[emb.tolist()],
-#             metadatas=[metadata_list[i]]
-#         )
-#     return collection
-# model = SentenceTransformer("all-MiniLM-L6-v2")
-# collection = client.get_or_create_collection("documents")
-
-# def get_top_chunks(question, k=5):
-#     query_embedding = model.encode([question])[0]
-#     result = collection.query(
-#         query_embeddings=[query_embedding.tolist()],
-#         n_results=k
-#     )
-#     return result["documents"][0]
 import faiss
 import numpy as np
 import pickle
